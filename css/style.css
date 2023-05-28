@@ -555,9 +555,8 @@ a {
   }
   
 
-
-  .background-image {
-    background-image: url("../img/pankaj-patel-bYiw48KLbmw-unsplash.jpg");
+  body {
+    background-image: url("/img/pankaj-patel-bYiw48KLbmw-unsplash.jpg");
     background-size: cover;
     background-position: center;
     animation: move-background 10s linear infinite;
@@ -572,4 +571,3 @@ a {
         background-position: 100% 100%;
     }
 }
-  
