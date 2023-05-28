@@ -108,24 +108,6 @@ p {
     justify-content: center;
 }
 
-.background-image {
-    background-image: url("/img/pankaj-patel-bYiw48KLbmw-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 100vh; /* Ajusta la altura según tus necesidades */
-  }
-  
-
-@keyframes move-background {
-    0% {
-        background-position: 0% 0%;
-    }
-
-    100% {
-        background-position: 100% 100%;
-    }
-}
-
 
 .redes {
     width: 30px;
@@ -570,5 +552,30 @@ a {
   
   .social-icons a:hover {
     color: #ccc;
+  }
+  
+
+
+  .background-image {
+    background-image: url("/img/pankaj-patel-bYiw48KLbmw-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    animation: move-background 10s linear infinite;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
+  @keyframes move-background {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 100%;
+    }
   }
   
