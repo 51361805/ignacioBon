@@ -108,12 +108,13 @@ p {
     justify-content: center;
 }
 
-body {
+.background-image {
     background-image: url("/img/pankaj-patel-bYiw48KLbmw-unsplash.jpg");
     background-size: cover;
     background-position: center;
-    animation: move-background 10s linear infinite;
-}
+    height: 100vh; /* Ajusta la altura según tus necesidades */
+  }
+  
 
 @keyframes move-background {
     0% {
