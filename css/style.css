@@ -571,10 +571,10 @@ a {
 
 
 body {
-    background-image: url("../img/pankaj-patel-bYiw48KLbmw-unsplash.jpg");
+    background-image: url("../img/rende.jpg");
     background-size: cover;
     background-position: center;
-    animation: move-background 10s linear infinite;
+    animation: move-background 30s linear infinite;
 }
 
 .dark {
