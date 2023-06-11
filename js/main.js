@@ -28,3 +28,5 @@ function aplicarClaseDark() {
 aplicarClaseDark();
 
 sliderCheckbox.addEventListener("change", aplicarClaseDark);
+
+
