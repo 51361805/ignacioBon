@@ -7,22 +7,24 @@ aboutSection.classList.toggle('expand');
 
 })
 
-
 const sliderCheckbox = document.getElementById("slider-checkbox");
-const modoOscuro = document.getElementById('darkBody');
 const aplicarModo = document.querySelector('.dark');
 
-aplicarModo.classList.add('dark');
-sliderCheckbox.setAttribute("checked", true);
+// Función para aplicar o quitar la clase 'dark'
+function aplicarClaseDark() {
+  if (sliderCheckbox.checked) {
 
-sliderCheckbox.addEventListener("change", function() {
-  if (this.checked) {
-    // El botón está activado
-    aplicarModo.classList.remove('dark');
-  
-  } else {
-    // El botón está desactivado
+    
     aplicarModo.classList.add('dark');
-  }
-});
 
+  } else {
+    aplicarModo.classList.remove('dark');
+
+
+  }
+}
+
+// Verificar el estado del botón al cargar la página
+aplicarClaseDark();
+
+sliderCheckbox.addEventListener("change", aplicarClaseDark);
