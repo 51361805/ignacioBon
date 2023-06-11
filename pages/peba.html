@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+    <title>Búsqueda de vuelos</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <h1>Búsqueda de vuelos</h1>
+    <form id="flightSearchForm">
+      <label for="origin">Origen:</label>
+      <select id="origin" name="origin">
+        <!-- Opciones de países de origen -->
+        <option value="MAD">Madrid</option>
+        <option value="BCN">Barcelona</option>
+        <!-- Agrega más opciones según tus necesidades -->
+      </select>
+      <br>
+      <label for="destination">Destino:</label>
+      <select id="destination" name="destination">
+        <!-- Opciones de países de destino -->
+        <option value="NYC">Nueva York</option>
+        <option value="LON">Londres</option>
+        <!-- Agrega más opciones según tus necesidades -->
+      </select>
+      <br>
+      <button type="submit">Buscar vuelos</button>
+    </form>
+
+    <div id="flightResults"></div>
+
+    <script>
+      const form = document.getElementById('flightSearchForm');
+      const flightResults = document.getElementById('flightResults');
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        // Obtener los valores seleccionados de los campos de origen y destino
+        const origin = document.getElementById('origin').value;
+        const destination = document.getElementById('destination').value;
+
+        // Configurar los parámetros de la solicitud
+        const apiKey = 'prtl6749387986743898559646983194';
+        const date = '2023-06-15';  // Fecha del vuelo
+
+        // Construir la URL de la solicitud
+        const url = `https://partners.api.skyscanner.net/apiservices/browseroutes/v1.0/${origin}/ES/${destination}/ES/${date}?apiKey=${apiKey}`;
+
+        // Realizar la solicitud a la API
+        axios.get(url)
+          .then(response => {
+            // Procesar la respuesta
+            const data = response.data;
+            console.log(response)
+            // Limpiar los resultados anteriores
+            flightResults.innerHTML = '';
+
+            // Mostrar los resultados en el HTML
+            data.Quotes.forEach(quote => {
+              const quoteElement = document.createElement('p');
+              quoteElement.textContent = `Precio: ${quote.MinPrice} ${data.Currencies[0].Symbol}`;
+              flightResults.appendChild(quoteElement);
+            });
+          })
+
+          .catch(error => {
+            console.log('Error en la solicitud:', error);
+          });
+
+      });
+    </script>
+  </body>
+
+  </html>
+
+
+
+
+
+
+
+
+
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

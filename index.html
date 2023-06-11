@@ -4,40 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ignacio Bon, desarrollador web frontend de Maldonado, Uruguay. Funcionales utilizando HTML, CSS y JavaScript. Contacta conmigo para potenciar tu presencia en línea.">
+    <meta name="description"
+        content="Ignacio Bon, desarrollador web frontend de Maldonado, Uruguay. Funcionales utilizando HTML, CSS y JavaScript. Contacta conmigo para potenciar tu presencia en línea.">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="icon" href="./img/ignaciobon.jpg" type="image/png">
     <script src="https://kit.fontawesome.com/1cd972ff5a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
-    
+
     <title>Ignacio Bon</title>
 </head>
 
-<body>
+<body class="dark">
 
 
-
-
-
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Ignacio Bon</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-
+        <div class="collapse navbar-collapse flex-column" id="navbarNav">
             <ul class="social-icons">
-                <li><a href="#" target="_blank"><i class="fab fa-facebook" style="color: #1877f2;"></i></a></li>
+                <li><a href="https://www.facebook.com/Nachitoparav" target="_blank"><i class="fab fa-facebook"
+                            style="color: #1877f2;"></i></a></li>
                 <li><a href="#" target="_blank"><i class="fab fa-twitter" style="color: #1da1f2;"></i></a></li>
-                <li><a href="#" target="_blank"><i class="fab fa-whatsapp" style="color: #25d366;"></i></a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=59892878389" target="_blank"><i class="fab fa-whatsapp"
+                            style="color: #25d366;"></i></a></li>
             </ul>
 
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">Sobre mí</a>
-                </li>
-               
+            <ul class="navbar-nav ml-auto flex-column">
                 <li class="nav-item">
                     <a class="nav-link" href="./pages/contacto.html">Contacto</a>
                 </li>
@@ -46,9 +41,14 @@
     </nav>
 
 
+    <div class="slider">
+        <input type="checkbox" id="slider-checkbox">
+        <label for="slider-checkbox" class="slider-label"></label>
+      </div>
+      
 
 
-
+   
 
     <div class="juntos">
         <div class="card">
@@ -67,63 +67,71 @@
         <section class="portfolio-section">
             <section class="about-section">
                 <h2>Sobre Mí</h2>
-                <p>¡Hola! Mi nombre es Ignacio Bon , soy de Uruguay y me apasiona el desarrollo web. He estudiado
-                    desarrollo web y JavaScript.</p>
+                <p>¡Hola! Mi nombre es Ignacio Bon, soy de Uruguay y me apasiona el desarrollo web. He estudiado
+                    desarrollo
+                    web y JavaScript.</p>
                 <p>Me considero un apasionado por aprender constantemente, y siempre estoy buscando nuevas oportunidades
                     para aplicar y ampliar mis habilidades.</p>
                 <p>Estoy emocionado por formar parte de proyectos desafiantes y colaborar con equipos talentosos en el
                     ámbito del desarrollo web.</p>
                 <p>Si estás buscando un desarrollador web motivado y entusiasta, estoy abierto a propuestas laborales.
-                    No dudes en contactarme para discutir cómo puedo contribuir a tu equipo y hacer realidad tus ideas
+                    No
+                    dudes en contactarme para discutir cómo puedo contribuir a tu equipo y hacer realidad tus ideas
                     digitales.</p>
+                <a href="./cv/Ignacio Bon_removed.pdf" download class="download-button">Descargar CV</a>
                 <button class="botonVerMas" id="ver-mas">Ver más</button>
             </section>
         </section>
-
     </div>
+
 
 
 
     <div class="certificate-section">
 
         <div class="certificate-column">
-            <h2>Certificado</h2>
-            <img src="./img/certificado-web.png" alt="Certificado">
+            <h2 class="certificate-heading">Certificado</h2>
+            <img src="./img/certificado-web.png" alt="Certificado" class="certificate-image">
         </div>
 
         <div class="description-column">
-            <h2>Descripción del Curso</h2>
-            <p class="textCurso">Nombre del Curso: <span class="course-name">Desarrollo Web</span></p>
-            <p class="textCurso">Duración: <span class="course-duration">38 Horas</span></p>
-            <p>Institución: <span class="course-institution">Coder House</span></p>
-            <p>Ubicación: <span class="course-location">Formato Virtual</span></p>
-            <p>Fecha de Finalización: <span class="course-date">23 de Febrero 2023</span></p>
-            <p>Descripción: <span class="course-description">Después de completar el curso de HTML y CSS, adquirí
-                     conocimientos en desarrollo web. Ahora puedo crear sitios web  utilizando HTML
-                    para la estructura y CSS para el estilo. Estoy listo para llevar a cabo proyectos web de forma
-                    autónoma y plasmar mis ideas con confianza.</span></p>
+            <h2 class="description-heading">Descripción del Curso</h2>
+            <p class="course-info">Nombre del Curso: <span class="course-name">Desarrollo Web</span></p>
+            <p class="course-info">Duración: <span class="course-duration">38 Horas</span></p>
+            <p class="course-info">Institución: <span class="course-institution">Coder House</span></p>
+            <p class="course-info">Ubicación: <span class="course-location">Formato Virtual</span></p>
+            <p class="course-info">Fecha de Finalización: <span class="course-date">23 de Febrero 2023</span></p>
+            <p class="course-info">Descripción: <span class="course-description">Después de completar el curso de HTML y
+                    CSS,
+                    adquirí conocimientos en desarrollo web. Ahora puedo crear sitios web utilizando HTML para la
+                    estructura y
+                    CSS para el estilo. Estoy listo para llevar a cabo proyectos web de forma autónoma y plasmar mis
+                    ideas con
+                    confianza.</span></p>
         </div>
 
     </div>
 
 
-
     <div class="certificate-section">
 
         <div class="certificate-column">
-            <h2>Certificado</h2>
+            <h2 class="certificate-heading">Certificado</h2>
             <img class="jsimg" src="./img/js.png" alt="Certificado">
         </div>
 
         <div class="description-column">
-            <h2>Descripción del Curso</h2>
-            <p class="textCurso">Nombre del Curso: <span class="course-name">Java Script</span></p>
-            <p class="textCurso">Duración: <span class="course-duration">38 Horas</span></p>
-            <p>Institución: <span class="course-institution">Coder House</span></p>
-            <p>Ubicación: <span class="course-location">Formato Virtual</span></p>
-            <p>Fecha de Finalización: <span class="course-date">25 Mayo 2023</span></p>
-            <p>Descripción: <span class="course-description">
-                Tras aprender JavaScript, puedo crear sitios web interactivos y funcionales. Ahora puedo desarrollar proyectos web de forma autónoma, combinando HTML, CSS y JavaScript para plasmar mis ideas con confianza.</span></p>
+            <h2 class="description-heading">Descripción del Curso</h2>
+            <p class="course-info">Nombre del Curso: <span class="course-name">JavaScript</span></p>
+            <p class="course-info">Duración: <span class="course-duration">38 Horas</span></p>
+            <p class="course-info">Institución: <span class="course-institution">Coder House</span></p>
+            <p class="course-info">Ubicación: <span class="course-location">Formato Virtual</span></p>
+            <p class="course-info">Fecha de Finalización: <span class="course-date">25 de Mayo 2023</span></p>
+            <p class="course-info">Descripción: <span class="course-description">
+                    Tras aprender JavaScript, puedo crear sitios web interactivos y funcionales. Ahora puedo desarrollar
+                    proyectos web de forma autónoma, combinando HTML, CSS y JavaScript para plasmar mis ideas con
+                    confianza.
+                </span></p>
         </div>
 
     </div>
@@ -132,21 +140,28 @@
     <div class="certificate-section">
 
         <div class="certificate-column">
-            <h2>Cursando</h2>
-            <img src="./img/react-js.png" alt="Certificado">
+            <h2 class="certificate-heading">Cursando</h2>
+            <img src="./img/react-js.png" alt="Certificado" class="certificate-image">
         </div>
 
         <div class="description-column">
-            <h2>Descripción del Curso</h2>
-            <p class="textCurso">Nombre del Curso: <span class="course-name">React-JS</span></p>
-            <p class="textCurso">Duración: <span class="course-duration">28 Horas</span></p>
-            <p>Institución: <span class="course-institution">Coder House</span></p>
-            <p>Ubicación: <span class="course-location">Formato Virtual</span></p>
-            <p>Fecha de Finalización: <span class="course-date">Cursando</span></p>
-            <p>Descripción: <span class="course-description">Actualmente estoy cursando Node.js, lo cual me permitirá construir aplicaciones de servidor eficientes en JavaScript. Estoy emocionado por aprender sobre su arquitectura orientada a eventos y utilizar su amplio ecosistema de módulos para crear soluciones web modernas.  </span></p>
+            <h2 class="description-heading">Descripción del Curso</h2>
+            <p class="course-info">Nombre del Curso: <span class="course-name">React-JS</span></p>
+            <p class="course-info">Duración: <span class="course-duration">28 Horas</span></p>
+            <p class="course-info">Institución: <span class="course-institution">Coder House</span></p>
+            <p class="course-info">Ubicación: <span class="course-location">Formato Virtual</span></p>
+            <p class="course-info">Fecha de Finalización: <span class="course-date">Cursando</span></p>
+            <p class="course-info">Descripción: <span class="course-description">Actualmente estoy cursando Node.js, lo
+                    cual me
+                    permitirá construir aplicaciones de servidor eficientes en JavaScript. Estoy emocionado por aprender
+                    sobre su
+                    arquitectura orientada a eventos y utilizar su amplio ecosistema de módulos para crear soluciones
+                    web modernas.
+                </span></p>
         </div>
 
     </div>
+
 
 
 
@@ -160,11 +175,11 @@
                     <div class="progress-icon">
                         <i class="fab fa-js fa-2x" style="color: rgb(170, 170, 67);"></i>
                     </div>
-                    <h5>JavaScript</h5>
+                    <h5 class="capa">JavaScript</h5>
                 </div>
 
                 <div class="progress">
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 50%;" aria-valuenow="50"
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 45%;" aria-valuenow="45"
                         aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
@@ -176,11 +191,11 @@
                     <div class="progress-icon">
                         <i class="fab fa-html5 fa-2x" style="color: rgb(29, 29, 209);"></i>
                     </div>
-                    <h5>HTML</h5>
+                    <h5 class="capa">HTML</h5>
                 </div>
 
                 <div class="progress">
-                    <div class="progress-bar bg-success" role="progressbar" style="width: 80%;" aria-valuenow="80"
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 60%;" aria-valuenow="60"
                         aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
@@ -193,11 +208,11 @@
                     <div class="progress-icon">
                         <i class="fab fa-css3-alt icon" style="color: rgb(190, 33, 33);"></i>
                     </div>
-                    <h5>CSS</h5>
+                    <h5 class="capa">CSS</h5>
                 </div>
 
                 <div class="progress">
-                    <div class="progress-bar bg-info" role="progressbar" style="width: 70%;" aria-valuenow="70"
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 65%;" aria-valuenow="65"
                         aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
 
@@ -372,15 +387,17 @@
 
 
 
+
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <p>Todos los derechos reservados &copy; 2023</p>
                 <ul class="social-icons">
-                    <li><a href="#" target="_blank"><i class="fab fa-facebook" style="color: #1877f2;"></i></a></li>
+                    <li><a href="https://www.facebook.com/Nachitoparav" target="_blank"><i class="fab fa-facebook"
+                                style="color: #1877f2;"></i></a></li>
                     <li><a href="#" target="_blank"><i class="fab fa-twitter" style="color: #1da1f2;"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="fab fa-whatsapp" style="color: #25d366;"></i></a></li>
-                </ul>
+                    <li><a href="https://api.whatsapp.com/send?phone=59892878389" target="_blank"><i
+                                class="fab fa-whatsapp" style="color: #25d366;"></i></a></li>
             </div>
         </div>
     </footer>
